@@ -43,8 +43,6 @@ try:
         results = api.search(search_string)
         print '#' + str(results['total']) + ' results found for ' + search_string
         for result in results['matches']:
-                #print(result['ip'])
                 print(result['ip_str'])
-                #print(result['data'])
 except:
         print(sys.exc_info()[0])
